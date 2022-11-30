@@ -13,3 +13,5 @@ The next site is loaded
 The loading of the next site gets stuck, user is unable to load any new webpage, recreating the webview (with "Recreate webview" button doesn't fix the issue). The Webview only starts working after restarting the application.
 
 I assume this bug is caused by javascript changing the internal state of some persistent element of the Webview engine, as disabling DOM storage API makes the issue go away (but it breaks some webviews at the same time).
+
+Bug report was filed to Chromium bug tracker and can be found here: https://bugs.chromium.org/p/chromium/issues/detail?id=1393574
